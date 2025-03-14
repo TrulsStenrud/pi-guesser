@@ -4,7 +4,6 @@ import AnswerWrapper from './pages/AnswerWrapper';
 import { Dashboard } from './pages/Dashboard';
 import { Result } from './pages/Result';
 import { Results } from './pages/Results';
-//import Result from './pages/Result';
 
 function App() {
 
