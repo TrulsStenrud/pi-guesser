@@ -21,7 +21,7 @@ export const Dashboard: FC = () => {
   return (
     <div className="flexColumn alignCenter">
       <h1 className="noMargin">gamecode: {gameCode}</h1>
-      <QRCode value={window.location.protocol+window.location.host+location.search}/>
+      <QRCode value={"https://trulsstenrud.github.io/pi-guesser"+location.search}/>
       <h1>[{users.join(", ")}]</h1>
       <button onClick={() => start()}>start</button>
     </div>

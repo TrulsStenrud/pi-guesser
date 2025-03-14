@@ -10,6 +10,7 @@ export const Answer: FC<{username: string; gameCode: string}> = ({username, game
   const location = useLocation();
 
   const [answerStr, setAnswerStr] = useState("");
+  const [answered, setAnswered] = useState(false);
 
   const inputValid = answerStr.startsWith("3.1415");
 
@@ -24,12 +25,13 @@ export const Answer: FC<{username: string; gameCode: string}> = ({username, game
     if(obj.error){
       alert("Noe galt skjedde, ikke slå av browseren. Kan hende du må sende resultat på slack xD");
     }else{
-      navigate({
-        pathname: "/result",
-        search: location.search,
-      });
+      setAnswered(true);
     }
 
+  }
+
+  if(answered){
+    return <h1>Svar er sendt</h1>;
   }
 
   return (
