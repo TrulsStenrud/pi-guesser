@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 
 import supabase from "../../utils/supabase";
 import { useSearchParams } from "react-router";
@@ -52,7 +52,7 @@ export const Results: FC = () => {
     return <h1>whoot?</h1>
   }
 
-  function renderResult(username, correct, incorrect) {
+  function renderResult(username: string, correct: string, incorrect: string) {
     return <p>
       <span>{username}</span>{' '} 
       <span className="green">{correct}</span>
