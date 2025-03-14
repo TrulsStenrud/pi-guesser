@@ -11,8 +11,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.49.1",
+    "classnames": "2.5.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-qr-code": "2.0.15",
+    "react-router": "7.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
